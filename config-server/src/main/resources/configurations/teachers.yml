@@ -1,0 +1,19 @@
+eureka:
+  instance:
+    hostname: localhost
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka # URL Eureka Server, куда микросервис "discovery" будет отправлять запросы для регистрации и поиска других сервисов.
+
+server:
+  port: 8020 # Порт, на котором работает данный микросервис (discovery-service).
+
+spring:
+  application:
+    name: teacher-service
+
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0  # Вероятность трассировки 100%

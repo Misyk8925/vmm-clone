@@ -7,7 +7,15 @@
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/discovery/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/teacher-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../ToDo/backend/backend_crud_mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/student-service/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../ToDo/backend/backend_crud_mysql/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="openjdk-20" project-jdk-type="JavaSDK">

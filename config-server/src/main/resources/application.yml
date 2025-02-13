@@ -13,3 +13,5 @@ spring:
         server:
             native:
                 search-locations: classpath:/configurations # local configuration location
+  config:
+    import: optional:configserver:http://localhost:8888

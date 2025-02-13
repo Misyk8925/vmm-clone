@@ -1,5 +1,12 @@
 spring:
+  cloud:
+    gateway:
+      routes:
+        - id: teacher-service
+          uri: lb://teacher-service
+          predicates:
+            - Path=/api/v1/teachers/**
+          filters:
+            - StripPrefix=0
   config:
     import: optional:configserver:http://localhost:8888
-  application:
-    name: gateway

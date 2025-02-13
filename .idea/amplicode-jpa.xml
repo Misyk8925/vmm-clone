@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AmplicodeJpaIdeaProjectConfig">
+  <component name="AmplicodeJpaIdeaProjectConfig" isRepositorySpecification="true" newRepositoryParent="org.springframework.data.jpa.repository.JpaRepository">
+    <option name="defaultUnitInitialized" value="true" />
     <option name="renamerInitialized" value="true" />
+    <option name="newEntityIdType" value="Long" />
+    <option name="newEntityIdStrategy" value="Identity" />
+    <option name="packageNameForExtractSuperclass" value="org.misha.teacher_service.grade" />
   </component>
 </project>

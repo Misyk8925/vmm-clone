@@ -1,6 +1,11 @@
 eureka:
   client:
-    reegister-with-eureka: false
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
 
 server:
     port: 8222 # port on which the API Gateway will work. Clients will send requests to this port.
@@ -17,10 +22,10 @@ spring:
           predicates:
             - Path=/api/v1/students/** # all requests starting with /api/v1/students/ will be redirected to the service at http://localhost:8010
 
-        - id: schools # id for the routes connected to the schools service
-          uri: http://localhost:8020
+        - id: teachers
+          uri: lb://teacher-service    # Change this to use service discovery
           predicates:
-            - Path=/api/v1/schools/**
+            - Path=/api/v1/teachers/**
 
 management:
     tracing:
